@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/alfredsaveron/paradox-blocker/releases/download/Initial/paradox-blocker-new.zip">
-    <img src="https://cdn.jsdelivr.net/gh/intergrav/devins-badges@v3/assets/cozy/download/latest-release_vector.svg" alt="Download Extension" height="40" />
+    <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/available/github_vector.svg" alt="Available on GitHub" height="38" />
   </a>
 </p>
 
