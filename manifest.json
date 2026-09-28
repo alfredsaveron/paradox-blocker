@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Paradox Blocker",
-  "version": "1.0.0",
-  "description": "Blocks Paradox Interactive and related game content across the web.",
+  "version": "1.3",
+  "description": "Say goodbye to Paradox games and clutter on your browser.",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -23,7 +23,13 @@
     "*://*.youtube.com/*",
     "*://*.steampowered.com/*",
     "*://*.steamcommunity.com/*",
-    "*://*.google.com/*"
+    "*://*.google.com/*",
+    "*://*.paradoxinteractive.com/*",
+    "*://*.paradoxplaza.com/*",
+    "*://*.paradoxwikis.com/*",
+    "*://*.paradoxforum.com/*",
+    "*://*.colossalorder.fi/*",
+    "*://*.triumph.net/*"
   ],
   "content_scripts": [
     {
@@ -31,10 +37,17 @@
         "*://*.youtube.com/*",
         "*://*.steampowered.com/*",
         "*://*.steamcommunity.com/*",
-        "*://*.google.com/*"
+        "*://*.google.com/*",
+        "*://*.paradoxinteractive.com/*",
+        "*://*.paradoxplaza.com/*",
+        "*://*.paradoxwikis.com/*",
+        "*://*.paradoxforum.com/*",
+        "*://*.colossalorder.fi/*",
+        "*://*.triumph.net/*"
       ],
       "js": [
         "shared/blacklist.js",
+        "content/sites/paradox.js",
         "content/sites/youtube.js",
         "content/sites/steam.js",
         "content/sites/google.js",
