@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "Paradox Blocker",
+  "version": "1.0.0",
+  "description": "Blocks Paradox Interactive and related game content across the web.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*",
+    "*://*.steampowered.com/*",
+    "*://*.steamcommunity.com/*",
+    "*://*.google.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/*",
+        "*://*.steampowered.com/*",
+        "*://*.steamcommunity.com/*",
+        "*://*.google.com/*"
+      ],
+      "js": [
+        "shared/blacklist.js",
+        "content/sites/youtube.js",
+        "content/sites/steam.js",
+        "content/sites/google.js",
+        "content/blocker.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}

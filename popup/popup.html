@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paradox Blocker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <div class="title-wrap">
+        <img src="../icon.svg" alt="Logo" class="logo-icon">
+        <h2>Paradox Blocker</h2>
+      </div>
+      <label class="switch">
+        <input type="checkbox" id="toggleStatus" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="stats-box">
+      <div class="stats-num" id="blockedCount">0</div>
+      <div class="stats-label">Blocked Content</div>
+    </div>
+
+    <div class="sites-list">
+      <span>Platforms:</span>
+      <div class="tags">
+        <span class="tag">YouTube</span>
+        <span class="tag">Steam</span>
+        <span class="tag">Google</span>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
