@@ -5,10 +5,15 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
-body {
+html, body {
   width: 260px;
   background: #ffffff;
   color: #000000;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+body {
   padding: 16px;
 }
 
